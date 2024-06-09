@@ -509,7 +509,7 @@ SET DEFINE OFF;
   ALTER TABLE "MITARBEITER" ADD CONSTRAINT "MITARBEITER_PK" PRIMARY KEY ("MITARBEITER_ID")
   USING INDEX PCTFREE 10 INITRANS 20 MAXTRANS 255 
   TABLESPACE "DATA"  ENABLE;
-  ALTER TABLE "MITARBEITER" ADD CONSTRAINT "MITARBEITER_CHK1" CHECK (qualifikationen IN ('B�hnentechnik','Lichttechnik','Videotechnik','Backlinetechnik','Pyrotechnik','Sicherheitstechnik','Einlasskontrolle','Ersthelfer','Crowd Controll','Catering','Reinigung','Public Relations')) ENABLE;
+  ALTER TABLE "MITARBEITER" ADD CONSTRAINT "MITARBEITER_CHK1" CHECK (qualifikationen IN ('Buehnentechnik','Lichttechnik','Videotechnik','Backlinetechnik','Pyrotechnik','Sicherheitstechnik','Einlasskontrolle','Ersthelfer','Crowd Controll','Catering','Reinigung','Public Relations')) ENABLE;
 --------------------------------------------------------
 --  Constraints for Table ARBEITSSCHRITT
 --------------------------------------------------------
@@ -521,7 +521,7 @@ SET DEFINE OFF;
   ALTER TABLE "ARBEITSSCHRITT" ADD CONSTRAINT "ARBEITSSCHRITTE_PK" PRIMARY KEY ("ARBEITSSCHRITT_ID")
   USING INDEX PCTFREE 10 INITRANS 20 MAXTRANS 255 
   TABLESPACE "DATA"  ENABLE;
-  ALTER TABLE "ARBEITSSCHRITT" ADD CONSTRAINT "ARBEITSSCHRITT_CHK1" CHECK (qualifikation IN ('B�hnentechnik','Lichttechnik','Videotechnik','Backlinetechnik','Pyrotechnik','Sicherheitstechnik','Einlasskontrolle','Ersthelfer','Crowd Controll','Catering','Reinigung','Public Relations')) ENABLE;
+  ALTER TABLE "ARBEITSSCHRITT" ADD CONSTRAINT "ARBEITSSCHRITT_CHK1" CHECK (qualifikation IN ('Buehnentechnik','Lichttechnik','Videotechnik','Backlinetechnik','Pyrotechnik','Sicherheitstechnik','Einlasskontrolle','Ersthelfer','Crowd Controll','Catering','Reinigung','Public Relations')) ENABLE;
 --------------------------------------------------------
 --  Constraints for Table LOCATION
 --------------------------------------------------------
@@ -549,7 +549,7 @@ SET DEFINE OFF;
   ALTER TABLE "TECHNIK" ADD CONSTRAINT "TECHNIK_PK" PRIMARY KEY ("TECHNIK_ID")
   USING INDEX PCTFREE 10 INITRANS 20 MAXTRANS 255 
   TABLESPACE "DATA"  ENABLE;
-  ALTER TABLE "TECHNIK" ADD CONSTRAINT "TECHNIK_CHK1" CHECK (kategorie IN ('Schall','Licht','B�hne','Stromerzeugung & Verteilung','Z�une & Absperrungen','Instrumente','Pyrotechnik','�berdachung','Sonstiges')) ENABLE;
+  ALTER TABLE "TECHNIK" ADD CONSTRAINT "TECHNIK_CHK1" CHECK (kategorie IN ('Schall','Licht','Buehne','Stromerzeugung und Verteilung','Zaeune und Absperrungen','Instrumente','Pyrotechnik','Ueberdachung','Sonstiges')) ENABLE;
 --------------------------------------------------------
 --  Constraints for Table BEWERTUNG
 --------------------------------------------------------
