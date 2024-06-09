@@ -5,6 +5,6 @@ CREATE table test (
 --BEIM INSERTEN DANACH EINMAL COMMIT WORK AUSFÜHREN DAMIT DAS GANZE AUCH ÜBERNOMMEN WIRD
 INSERT INTO test 
 VALUES ('mittel');
-COMMIT WORK; -- VIelleicht auch nur "COMMIT;"
+COMMIT; -- VIelleicht auch nur "COMMIT;"
 
 drop table test;
