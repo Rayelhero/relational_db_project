@@ -200,3 +200,4 @@ INSERT INTO TECHNIK (technik_id, kategorie, modell, kosten, betriebskosten_std, 
 INSERT INTO TECHNIK (technik_id, kategorie, modell, kosten, betriebskosten_std, mietkosten_tag) VALUES ('198', 'Licht', 'OmegaPulse V2', '6917', '35', '244');
 INSERT INTO TECHNIK (technik_id, kategorie, modell, kosten, betriebskosten_std, mietkosten_tag) VALUES ('199', 'Zäune & Absperrungen', 'DeltaPrime X1', '412', '183', '288');
 INSERT INTO TECHNIK (technik_id, kategorie, modell, kosten, betriebskosten_std, mietkosten_tag) VALUES ('200', 'Überdachung', 'HyperNet Z10', '6027', '147', '341');
+
