@@ -69,8 +69,7 @@ where kunde_id IN (
     fetch first row only
 );
 
---10 
-
-
-
-
+--10 Prozent der Tickets die ermäßigt sind
+select e.event_id, e.titel as "Titel Event", (sum(case when t.ermaessigt = 'true' then 1 else 0 end) *100)/ count(*) as "Anteil Ermaessigt in Prozent"
+from ticket t join event e on t.event_id=e.event_id
+group by e.event_id, e.titel;
