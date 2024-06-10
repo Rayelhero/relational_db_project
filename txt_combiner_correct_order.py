@@ -19,6 +19,7 @@ def combine_txt_files_with_sql_blocks(directory, output_file):
         "event",
         "bewertung",
         "einsatz",
+        "einsatz_mitarbeiter",
         "event_band",
         "ticket"
     ]
