@@ -76,3 +76,10 @@ SET DEFINE OFF;
   ALTER TABLE "PERSON" ADD CONSTRAINT "PERSON_PK" PRIMARY KEY ("PERSON_ID")
   USING INDEX PCTFREE 10 INITRANS 20 MAXTRANS 255 
   TABLESPACE "DATA"  ENABLE;
+
+
+
+
+INSERT INTO LOCATION (location_id, anzahl_sitzplaetze, anzahl_stehplaetze, bezeichnung, adresse, barrierefrei, person_id) VALUES ('12', '469', '1858', 'Crescendo Club', '5 Kipling Street', 'true', '385');
+
+commit;

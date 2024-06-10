@@ -44,5 +44,5 @@ def process_csv_files_in_directory(directory_path):
         save_statements_to_file(insert_statements, output_file_path)
 
 # Example usage:
-directory_path = r'C:\Users\raydi\Desktop\test_data_first_try\new_script_test'  # Use raw string (r'') for Windows paths
+directory_path = r'C:\Users\raydi\Desktop\test_data_first_try\single_test'  # Use raw string (r'') for Windows paths
 process_csv_files_in_directory(directory_path)
