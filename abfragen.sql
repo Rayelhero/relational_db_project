@@ -80,4 +80,5 @@ select b.name as "Band Name", sum(e.website_aufrufe_24h) as "Aufrufe letze 24H",
 from band b join event_band eb on b.band_id = eb.band_id
     join event e on e.event_id = eb.event_id
 group by b.band_id, b.name
-order by sum(e.website_aufrufe_24h) desc;
+order by sum(e.website_aufrufe_24h) desc
+fetch first row only;
