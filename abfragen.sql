@@ -74,3 +74,10 @@ select e.event_id, e.titel as "Titel Event", (sum(case when t.ermaessigt = 'true
 from ticket t join event e on t.event_id=e.event_id
 group by e.event_id, e.titel
 order by (sum(case when t.ermaessigt = 'true' then 1 else 0 end) *100)/ count(*) desc;
+
+--11 Interesanteste Band nach aufrufen
+select b.name as "Band Name", sum(e.website_aufrufe_24h) as "Aufrufe letze 24H", sum(e.jetzt_auf_website) as "Jetzt auf Website"
+from band b join event_band eb on b.band_id = eb.band_id
+    join event e on e.event_id = eb.event_id
+group by b.band_id, b.name
+order by sum(e.website_aufrufe_24h) desc;
